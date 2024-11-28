@@ -1,0 +1,13 @@
+# Server 2 (Encryption)
+FROM python:3.9
+
+WORKDIR /app
+
+COPY ./server2.py /app
+COPY ./requirements.txt /app
+
+RUN pip install -r requirements.txt
+
+EXPOSE 5001
+
+CMD ["python", "server2.py"]
