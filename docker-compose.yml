@@ -1,0 +1,5 @@
+version: '3.8'
+services:
+  server1:
+    build: ./backend/server1
+   
